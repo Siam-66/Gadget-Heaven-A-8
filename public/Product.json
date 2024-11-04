@@ -1,0 +1,172 @@
+[
+    {
+        "product_id": "L04",
+        "product_title": "Lenovo ThinkPad X1 Carbon",
+        "product_image": "https://i.ibb.co.com/Dzfbswg/Lenovo-Think-Pad-X1-Carbon.jpg",
+        "category": "Laptops",
+        "price": 1299,
+        "description": "Lightweight business laptop with top-notch security and performance.",
+        "specification": [
+            "14-inch FHD display",
+            "Intel Core i7 processor",
+            "16GB RAM",
+            "1TB SSD",
+            "Integrated Intel Iris Xe Graphics"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "L05",
+        "product_title": "Acer Predator Helios 300",
+        "product_image": "https://i.ibb.co.com/jrjL1Xv/Acer-Predator-Helios-300.jpg",
+        "category": "Laptops",
+        "price": 1399,
+        "description": "High-performance gaming laptop with advanced cooling.",
+        "specification": [
+            "15.6-inch QHD display",
+            "Intel Core i7 processor",
+            "16GB RAM",
+            "512GB SSD",
+            "NVIDIA GeForce RTX 3070"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "A05",
+        "product_title": "Bose QuietComfort 45",
+        "product_image": "https://i.ibb.co.com/t4wBYn3/Bose-Quiet-Comfort-45.jpg",
+        "category": "Accessories",
+        "price": 329,
+        "description": "Premium noise-canceling headphones with superior comfort.",
+        "specification": [
+            "Active noise canceling",
+            "24 hours of battery life",
+            "Comfortable ear cushions",
+            "Bluetooth connectivity",
+            "Quick charge feature"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "A06",
+        "product_title": "Samsung Portable SSD T7",
+        "product_image": "https://i.ibb.co.com/DwDvFGQ/Samsung-Portable-SSD-T7.jpg",
+        "category": "Accessories",
+        "price": 99,
+        "description": "Compact and fast portable storage with high transfer speeds.",
+        "specification": [
+            "1TB storage capacity",
+            "USB 3.2 Gen 2",
+            "Shock-resistant",
+            "AES 256-bit encryption",
+            "Compatible with PC, Mac, Android"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "P04",
+        "product_title": "iPhone 15 Pro Max",
+        "product_image": "https://i.ibb.co.com/1b5mzC9/i-Phone-15-Pro-Max.jpg",
+        "category": "Smartphones",
+        "price": 1299,
+        "description": "Latest iPhone with powerful A17 Bionic chip and advanced camera features.",
+        "specification": [
+            "6.7-inch Super Retina XDR display",
+            "A17 Bionic chip",
+            "48MP main camera",
+            "5G enabled",
+            "MagSafe compatibility"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "P05",
+        "product_title": "Xiaomi Mi 13 Ultra",
+        "product_image": "https://i.ibb.co.com/tpMpgDj/Xiaomi-Mi-13-Ultra.jpg",
+        "category": "Smartphones",
+        "price": 899,
+        "description": "Flagship phone with cutting-edge camera technology and fast performance.",
+        "specification": [
+            "6.73-inch AMOLED display",
+            "Snapdragon 8 Gen 3",
+            "50MP quad camera setup",
+            "5000mAh battery with 120W fast charging",
+            "MIUI based on Android"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "A07",
+        "product_title": "Razer Basilisk V3",
+        "product_image": "https://i.ibb.co.com/w0sy3Hg/Razer-Basilisk-V3.jpg",
+        "category": "Accessories",
+        "price": 79,
+        "description": "High-precision gaming mouse with customizable RGB lighting.",
+        "specification": [
+            "11 programmable buttons",
+            "Focus+ 26K DPI optical sensor",
+            "Customizable RGB",
+            "Hyperscroll tilt wheel",
+            "Ergonomic design"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "A08",
+        "product_title": "Amazon Kindle Oasis",
+        "product_image": "https://i.ibb.co.com/CVhw8kf/Amazon-Kindle-Oasis.jpg",
+        "category": "Accessories",
+        "price": 249,
+        "description": "Premium e-reader with adjustable warm light and waterproof design.",
+        "specification": [
+            "7-inch Paperwhite display",
+            "Adjustable warm light",
+            "Waterproof (IPX8)",
+            "32GB storage",
+            "Weeks of battery life"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "L06",
+        "product_title": "Microsoft Surface Laptop Studio",
+        "product_image": "https://i.ibb.co.com/j5YTJHp/Microsoft-Surface-Laptop-Studio.jpg",
+        "category": "Laptops",
+        "price": 1599,
+        "description": "Versatile laptop with touchscreen and stylus support for creators.",
+        "specification": [
+            "14.4-inch PixelSense Flow display",
+            "Intel Core i7 processor",
+            "16GB RAM",
+            "512GB SSD",
+            "NVIDIA GeForce RTX 3050 Ti"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "P06",
+        "product_title": "OPPO Find X5 Pro",
+        "product_image": "https://i.ibb.co.com/PG04xvb/OPPO-Find-X5-Pro.jpg",
+        "category": "Smartphones",
+        "price": 1099,
+        "description": "Premium smartphone with cutting-edge design and exceptional camera performance.",
+        "specification": [
+            "6.7-inch AMOLED display",
+            "Snapdragon 8 Gen 1",
+            "50MP triple camera setup",
+            "5000mAh battery with 80W fast charging",
+            "ColorOS based on Android"
+        ],
+        "availability": true,
+        "rating": 4.5
+    }
+]

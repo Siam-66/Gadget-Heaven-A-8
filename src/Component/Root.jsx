@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 
 const Root = () => {
     return (
-        <div>
+        <div className="container mx-auto">
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
