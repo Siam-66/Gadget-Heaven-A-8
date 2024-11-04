@@ -1,5 +1,6 @@
 import Bannar from "./Bannar";
-import Product from "./Product";
+import Products from "./Products";
+import Product from "./Products";
 
 
 
@@ -7,7 +8,7 @@ const Home = () => {
     return (
         <div>
         <Bannar></Bannar>
-        <Product></Product>
+        <Products></Products>
 
 
         </div>
