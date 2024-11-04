@@ -12,6 +12,7 @@ import Root from './Component/Root';
 import ErrorPage from './Component/ErrorPage';
 import Dashboard from './Component/Dashboard';
 import ProductDetails from './Component/ProductDetails';
+import AboutUs from './Component/AboutUs';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
       {
         path: "dashboard",
         element: <Dashboard></Dashboard>,
+        loader: () => fetch('/Product.json')
+      },
+      {
+        path: "aboutUs",
+        element: <AboutUs></AboutUs>,
       },
     ],
   },

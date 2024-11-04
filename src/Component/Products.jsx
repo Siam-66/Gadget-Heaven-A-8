@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import {  useState } from "react";
 import Product from "./Product";
 
 const Products = () => {
@@ -11,7 +12,7 @@ const Products = () => {
             .then(res => res.json())
             .then(data => {
                 setProducts(data);
-                setFilteredProducts(data); // Show all products by default
+                setFilteredProducts(data); 
             });
     }, []);
 
@@ -21,7 +22,7 @@ const Products = () => {
             setFilteredProducts(products);
         } else {
             const filtered = products.filter(product => product.category === category);
-            setFilteredProducts(filtered.length > 0 ? filtered : null); // If no data, set to null
+            setFilteredProducts(filtered.length > 0 ? filtered : null); 
         }
     };
 

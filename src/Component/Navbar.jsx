@@ -1,6 +1,6 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
-
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
     const location = useLocation();
     const isHomePage = location.pathname === "/";
@@ -44,7 +44,7 @@ const Navbar = () => {
         </li>
         <li>
             <NavLink
-                to="/about"
+                to="/aboutUs"
                 className={({ isActive }) =>
                     isActive
                         ? `${isHomePage ? "bg-white text-[#9538E2]" : "text-[#9538E2]"} px-3 py-2 rounded-lg`

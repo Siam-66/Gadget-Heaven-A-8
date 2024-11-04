@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
+import { addToStoredCardList, addToStoredLoveList } from "./CardLove";
 
 
 const ProductDetails = () => {
@@ -11,6 +12,15 @@ const ProductDetails = () => {
     
     const product = data.find(product => product.product_id === product_id);
     const { product_id: newProductId ,product_title, product_image, price,description,specification,rating } = product;
+
+    const addToCard = (id) => {
+      addToStoredCardList(id);
+    }
+
+
+    const addToLove = (id) => {
+      addToStoredLoveList(id);
+    }
 
     return (
 
@@ -29,9 +39,9 @@ const ProductDetails = () => {
 </div>
 <div className=" flex items-center justify-center ">
     
-<div className="flex justify-between items-start mx-2  mt-6 bg-base-200 p-5 ">
+<div className="flex justify-between rounded-xl items-start mx-2  mt-6 bg-base-200 p-5 ">
   <figure>
-    <img className=" w-[40rem]  p-5"
+    <img className=" w-[40rem] rounded-xl p-5"
       src= {product_image}
       alt="product" />
   </figure>
@@ -56,10 +66,11 @@ const ProductDetails = () => {
   <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
 <p className="pl-1">{rating}</p></div>
     <div className="card-actions justify-start items-center mt-3">
-        <Link  className="btn rounded-3xl text-lg text-[#9538E2] border-[#9538E2] hover:bg-[#9538E2] hover:text-white">
+        < button onClick={()=> addToCard(product_id)} className="btn rounded-3xl text-lg text-[#9538E2] border-[#9538E2] hover:bg-[#9538E2] hover:text-white">
         Add To Card <IoCartOutline className="text-2xl"/>
-        </Link>
-        <FaRegHeart className="text-4xl ml-3 hover:bg-[#9538E2] hover:text-white rounded-3xl p-1" />
+        </button>
+        <button onClick={()=> addToLove(product_id)} className="ml-3 hover:bg-[#9538E2] hover:text-white rounded-3xl p-1"> <FaRegHeart className="text-4xl " /></button>
+       
     </div>
   </div>
 </div>
