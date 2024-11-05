@@ -1,4 +1,4 @@
-# Project Name: [Your Project Name]
+# Project Name: [Gadget Heaven]
 
 ## Live Website Link
 [https://assignment-8-main.netlify.app/](#)
@@ -7,7 +7,7 @@
 [https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-Siam-66](#)  
 
 ## Overview
-This project is a modern e-commerce dashboard application built with React. Users can explore and manage a variety of products, creating a seamless shopping experience through an intuitive interface.
+Gadget Heaven is a modern e-commerce dashboard application built with React. Users can explore and manage a variety of products, creating a seamless shopping experience through an intuitive interface.
 
 ## React Fundamental Concepts Used
 - **Components**: Building reusable UI components such as ProductCard and ProductLove.

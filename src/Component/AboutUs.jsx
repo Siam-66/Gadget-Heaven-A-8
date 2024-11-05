@@ -1,8 +1,11 @@
-
+import { Helmet } from 'react-helmet';
 
 const AboutUs = () => {
     return (
         <div className="about-us-container px-6  bg-gray-50 text-gray-800">
+        <Helmet>
+        <title>About Us/Gadget Heaven</title>
+        </Helmet>
             <h1 className="text-5xl font-bold rounded-2xl text-center mb-6 py-20 bg-purple-500 text-white">About Us</h1>
 
             <section className="mb-8">

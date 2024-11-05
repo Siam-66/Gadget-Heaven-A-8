@@ -1,8 +1,11 @@
-
+import { Helmet } from 'react-helmet';
 
 const Statistics = () => {
     return (
         <div>
+        <Helmet>
+        <title>Statistics/Gadget Heaven</title>
+        </Helmet>
             <div className='text-center bg-purple-500 pt-10 pb-10 rounded-2xl text-white '>
                 <h3 className="text-5xl my-5 font-semibold">Statistics</h3>
                 <p>Explore the latest gadgets that will take your experience to the next level. From smart devices <br className=' max-sm:hidden' /> to the coolest accessories, we have it all!</p>

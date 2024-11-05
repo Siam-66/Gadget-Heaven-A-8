@@ -17,7 +17,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                         isActive
                             ? `${isHomePage ? "bg-white text-[#9538E2]" : "text-[#9538E2]"} px-3 py-2 rounded-lg`
-                            : `${isHomePage ? "text-white" : "text-[#9538E2]"} px-3 py-2 rounded-lg`
+                            : `${isHomePage ? "text-white bg-[#9538E2]" : "text-[#9538E2]"} px-3 py-2 rounded-lg`
                     }
                 >
                     Home
@@ -29,7 +29,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                         isActive
                             ? `${isHomePage ? "bg-white text-[#9538E2]" : "bg-[#9538E2] text-white"} px-3 py-2 rounded-lg`
-                            : `${isHomePage ? "text-white" : "text-[#9538E2]"} px-3 py-2 rounded-lg`
+                            : `${isHomePage ? "text-white bg-[#9538E2]" : "text-[#9538E2]"} px-3 py-2 rounded-lg`
                     }
                 >
                     Statistics
@@ -41,7 +41,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                         isActive
                             ? `${isHomePage ? "bg-white text-[#9538E2]" : "bg-[#9538E2] text-white"} px-3 py-2 rounded-lg`
-                            : `${isHomePage ? "text-white" : "text-[#9538E2]"} px-3 py-2 rounded-lg`
+                            : `${isHomePage ? "text-white bg-[#9538E2]" : "text-[#9538E2]"} px-3 py-2 rounded-lg`
                     }
                 >
                     Dashboard
@@ -53,7 +53,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                         isActive
                             ? `${isHomePage ? "bg-white text-[#9538E2]" : "bg-[#9538E2] text-white"} px-3 py-2 rounded-lg`
-                            : `${isHomePage ? "text-white" : "text-[#9538E2]"} px-3 py-2 rounded-lg`
+                            : `${isHomePage ? "text-white bg-[#9538E2]" : "text-[#9538E2]"} px-3 py-2 rounded-lg`
                     }
                 >
                     About Us

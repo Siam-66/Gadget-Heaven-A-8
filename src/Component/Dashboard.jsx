@@ -8,7 +8,7 @@ import ProductLove from './ProductLove';
 import { GiSettingsKnobs } from "react-icons/gi";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { Helmet } from 'react-helmet';
 const Dashboard = () => {
     const allProduct = useLoaderData();
     const [cardLists, setCardList] = useState([]);
@@ -74,6 +74,9 @@ const Dashboard = () => {
 
     return (
         <div>
+        <Helmet>
+        <title>Dashboard/Gadget Heaven</title>
+        </Helmet>
             <div className='text-center bg-purple-500 pt-2 rounded-t-2xl text-white'>
                 <h3 className="text-5xl my-5">Dashboard</h3>
                 <p>Explore the latest gadgets that will take your experience to the next level. From smart devices <br className=' max-sm:hidden' /> to the coolest accessories, we have it all!</p>
