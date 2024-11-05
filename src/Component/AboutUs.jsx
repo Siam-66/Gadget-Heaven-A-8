@@ -2,8 +2,8 @@
 
 const AboutUs = () => {
     return (
-        <div className="about-us-container px-6 py-10 bg-gray-50 text-gray-800">
-            <h1 className="text-4xl font-bold text-center mb-6 py-10 bg-purple-700 text-white">About Us</h1>
+        <div className="about-us-container px-6  bg-gray-50 text-gray-800">
+            <h1 className="text-5xl font-bold rounded-2xl text-center mb-6 py-20 bg-purple-500 text-white">About Us</h1>
 
             <section className="mb-8">
                 <h2 className="text-3xl font-semibold mb-2 text-purple-600">Welcome to Gadget Heaven</h2>

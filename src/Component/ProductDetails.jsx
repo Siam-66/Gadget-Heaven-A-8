@@ -1,5 +1,4 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 import { addToStoredCardList, addToStoredLoveList } from "./CardLove";
@@ -76,6 +75,7 @@ const ProductDetails = () => {
 </div>
 
 </div>
+
         </div>
 
 
