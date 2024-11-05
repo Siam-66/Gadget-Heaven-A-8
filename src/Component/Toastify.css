@@ -1,0 +1,7 @@
+.custom-toast .Toastify__icon {
+    color: #9538E2 !important; /* Change the icon color to purple */
+}
+
+.custom-toast .Toastify__progress-bar {
+    background-color: #9538E2 !important; /* Change the progress bar color to purple */
+}

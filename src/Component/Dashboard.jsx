@@ -6,6 +6,8 @@ import { getStoredCardList, getStoredLoveList, removeFromStoredCardList, removeF
 import ProductCard from './ProductCard';
 import ProductLove from './ProductLove';
 import { GiSettingsKnobs } from "react-icons/gi";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Dashboard = () => {
     const allProduct = useLoaderData();
@@ -14,13 +16,11 @@ const Dashboard = () => {
     const [loveLists, setLoveList] = useState([]);
     const [showModal, setShowModal] = useState(false);
 
-
     useEffect(() => {
         const storedCardList = getStoredCardList();
         const addCardList = allProduct.filter(product => storedCardList.includes(product.product_id));
         setCardList(addCardList);
     }, [allProduct]);
-
 
     useEffect(() => {
         const storedLoveList = getStoredLoveList();
@@ -28,24 +28,33 @@ const Dashboard = () => {
         setLoveList(addLoveList);
     }, [allProduct]);
 
-
     useEffect(() => {
         const total = cardLists.reduce((sum, product) => sum + product.price, 0);
         setTotalCost(total);
     }, [cardLists]);
 
- 
     const handleRemoveProduct = (productId) => {
         const updatedCardList = cardLists.filter(product => product.product_id !== productId);
         setCardList(updatedCardList);
-        removeFromStoredCardList(productId); 
+        removeFromStoredCardList(productId);
+        toast.success("Removed from Card List!", {
+            style: {
+                backgroundColor: "white",
+                color: "#9538E2",
+            }
+        });
     };
-
 
     const handleRemoveProductLove = (productId) => {
         const updatedLoveList = loveLists.filter(product => product.product_id !== productId);
         setLoveList(updatedLoveList);
         removeFromStoredLoveList(productId);
+        toast.success("Removed from Love List!", {
+            style: {
+                backgroundColor: "white",
+                color: "#9538E2",
+            }
+        });
     };
 
     const handleSortByPrice = () => {
@@ -53,11 +62,9 @@ const Dashboard = () => {
         setCardList(sortedList);
     };
 
-
     const handlePurchase = () => {
         setShowModal(true);
     };
-
 
     const closeModalAndClear = () => {
         setCardList([]); 
@@ -126,7 +133,7 @@ const Dashboard = () => {
                 </TabPanel>
             </Tabs>
 
-            {/* Modal for Purchase Confirmation */}
+            
             <dialog id="purchase_modal" className="modal modal-bottom sm:modal-middle" open={showModal}>
                 <div className="modal-box text-center p-5">
                     <div className='flex items-center justify-center'>
@@ -136,11 +143,13 @@ const Dashboard = () => {
                     <h2 className="text-3xl font-bold">Payment Successfully</h2>
                     <p>Thanks for purchasing.</p>
                     <p>Total:(<span className='text-purple-500'>{totalCost}$</span>)</p>
-                    <div className="modal-action  justify-center">
+                    <div className="modal-action justify-center">
                         <button className="btn w-full text-xl text-purple-500 border-purple-500" onClick={closeModalAndClear}>Close</button>
                     </div>
                 </div>
             </dialog>
+
+            <ToastContainer position="top-center" autoClose={3000} hideProgressBar={false} closeOnClick pauseOnHover draggable />
         </div>
     );
 };
