@@ -4,6 +4,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { addToStoredCardList, addToStoredLoveList } from "./CardLove";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import ProductDetailsBlank from "./ProductDetailsBlank";
 
 const ProductDetails = () => {
     const { product_id } = useParams();
@@ -36,7 +37,7 @@ const ProductDetails = () => {
 
     return (
         <div className="relative mb-5">
-            <div className="hero bg-[#9538E2] rounded-b-2xl text-white">
+            <div className="hero bg-[#9538E2] pb-[12rem] rounded-b-2xl text-white">
                 <div className="hero-content text-center">
                     <div className="h-[10rem]">
                         <h1 className="lg:text-5xl text-4xl font-bold mt-5">Product Details</h1>
@@ -46,10 +47,10 @@ const ProductDetails = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex items-center justify-center">
-                <div className="flex justify-between rounded-xl items-start mx-2 mt-6 bg-base-200 p-5">
+            <div className="flex items-center justify-center absolute lg:bottom-[-17rem] lg:left-[8rem] md:bottom-[-22rem] md:left-[3rem] max-sm:bottom-[-39rem] max-sm:left-[3rem] md:w-5/6 md:mx-4 max-sm:w-4/5">
+                <div className="md:flex justify-between rounded-xl items-start mx-2 mt-6 bg-base-200 p-5">
                     <figure>
-                        <img className="w-[40rem] rounded-xl p-5" src={product_image} alt="product" />
+                        <img className="md:w-[40rem] w-[20rem] rounded-xl p-5" src={product_image} alt="product" />
                     </figure>
                     <div className="w-2/3">
                         <h2 className="card-title">{product_title}</h2>
@@ -71,7 +72,7 @@ const ProductDetails = () => {
                             <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
                             <p className="pl-1">{rating}</p>
                         </div>
-                        <div className="card-actions justify-start items-center mt-3">
+                        <div className=" flex justify-start items-center mt-3">
                             <button onClick={() => addToCard(product_id)} className="btn rounded-3xl text-lg text-[#9538E2] border-[#9538E2] hover:bg-[#9538E2] hover:text-white">
                                 Add To Card <IoCartOutline className="text-2xl" />
                             </button>
@@ -85,6 +86,7 @@ const ProductDetails = () => {
 
             
             <ToastContainer position="top-center" autoClose={3000} hideProgressBar={false} closeOnClick pauseOnHover draggable />
+        <ProductDetailsBlank></ProductDetailsBlank>
         </div>
     );
 };

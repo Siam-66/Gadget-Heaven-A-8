@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 
 
 const Bannar = () => {
@@ -10,7 +11,10 @@ const Bannar = () => {
       <p className="py-6 text-sm">
       Explore the latest gadgets that will take your experience to the next level. From smart devices to <br className="max-sm:hidden"/> the coolest accessories, we have it all!
       </p>
-      <button className="btn rounded-3xl text-lg text-[#9538E2]">Shop Now</button>
+      <NavLink to="/dashboard" className="btn rounded-3xl text-lg text-[#9538E2]">
+      Shop Now
+      </NavLink>
+      
     </div>
   </div>
 </div>
