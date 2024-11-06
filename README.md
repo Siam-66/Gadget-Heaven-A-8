@@ -4,7 +4,7 @@
 [https://assignment-8-main.netlify.app/](#)
 
 ## Requirement Document Link
-[https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-Siam-66](#)  
+[https://1drv.ms/b/c/05987163b00fdbde/EdgWQ_zYy6RMoIEhBRjk3RQBBnIzEnqJIFWx9YpZmeW6-g?e=gp9FBw](#)  
 
 ## Overview
 Gadget Heaven is a modern e-commerce dashboard application built with React. Users can explore and manage a variety of products, creating a seamless shopping experience through an intuitive interface.
