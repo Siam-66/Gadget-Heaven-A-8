@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
@@ -5,6 +6,7 @@ import { addToStoredCardList, addToStoredLoveList } from "./CardLove";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import ProductDetailsBlank from "./ProductDetailsBlank";
+import { Helmet } from "react-helmet";
 
 const ProductDetails = () => {
     const { product_id } = useParams();
@@ -13,30 +15,37 @@ const ProductDetails = () => {
     const product = data.find(product => product.product_id === product_id);
     const { product_id: newProductId, product_title, product_image, price, description, specification, rating } = product;
 
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const addToCard = (id) => {
       addToStoredCardList(id);
       toast.success("Added to Card!", {
           style: {
-              backgroundColor: "white", // Purple background color
-              color: "#9538E2", // White text color
-              
-            }
+              backgroundColor: "white",
+              color: "#9538E2",
+          }
       });
-  }
+    }
   
-  const addToLove = (id) => {
+    const addToLove = (id) => {
       addToStoredLoveList(id);
       toast.success("Added to Love List!", {
           style: {
-              backgroundColor: "white", // Purple background color
-              color: "#9538E2", // White text color
+              backgroundColor: "white",
+              color: "#9538E2",
           }
       });
-  }
-  
+    }
 
     return (
+
         <div className="relative mb-5">
+        <Helmet>
+        <title>Product Details/Gadget Heaven</title>
+      </Helmet>
             <div className="hero bg-[#9538E2] pb-[12rem] rounded-b-2xl text-white">
                 <div className="hero-content text-center">
                     <div className="h-[10rem]">
@@ -72,7 +81,7 @@ const ProductDetails = () => {
                             <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
                             <p className="pl-1">{rating}</p>
                         </div>
-                        <div className=" flex justify-start items-center mt-3">
+                        <div className="flex justify-start items-center mt-3">
                             <button onClick={() => addToCard(product_id)} className="btn rounded-3xl text-lg text-[#9538E2] border-[#9538E2] hover:bg-[#9538E2] hover:text-white">
                                 Add To Card <IoCartOutline className="text-2xl" />
                             </button>
@@ -83,10 +92,9 @@ const ProductDetails = () => {
                     </div>
                 </div>
             </div>
-
             
             <ToastContainer position="top-center" autoClose={3000} hideProgressBar={false} closeOnClick pauseOnHover draggable />
-        <ProductDetailsBlank></ProductDetailsBlank>
+            <ProductDetailsBlank />
         </div>
     );
 };
