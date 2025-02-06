@@ -1,4 +1,4 @@
-# Project Name: [Gadget Heaven]
+# Project Name: Gadget Heaven
 
 ## Live Website Link
 [https://assignment-8-main.netlify.app/](#)
